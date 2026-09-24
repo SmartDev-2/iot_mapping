@@ -3,3 +3,5 @@
 .env
 .phpunit.result.cache
 /storage/*.key
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
