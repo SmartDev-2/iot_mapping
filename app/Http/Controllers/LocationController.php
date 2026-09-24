@@ -42,6 +42,7 @@ class LocationController extends Controller
         return response()->json([
             'success' => true,
             'data' => [
+                'device_id' => $location->device_id,
                 'latitude' => $location->latitude,
                 'longitude' => $location->longitude,
                 'timestamp' => $location->created_at?->format('Y-m-d H:i:s'),
